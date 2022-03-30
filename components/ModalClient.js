@@ -16,7 +16,11 @@ import { TypeForm } from '../components';
 
 export const ModalClient = ({ isOpen, onClose }) => {
 	return (
-		<Modal isOpen={isOpen} onClose={onClose} size='xl'>
+		<Modal
+			isOpen={isOpen}
+			onClose={onClose}
+			size='xl'
+			scrollBehavior='inside'>
 			<ModalOverlay />
 			<ModalContent paddingTop={'20px'} paddingBottom='15px'>
 				<ModalBody>

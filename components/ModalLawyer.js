@@ -15,7 +15,11 @@ import { TypeForm } from '../components';
 
 export const ModalLawyer = ({ isOpen, onClose }) => {
 	return (
-		<Modal isOpen={isOpen} onClose={onClose} size='xl'>
+		<Modal
+			isOpen={isOpen}
+			onClose={onClose}
+			size='xl'
+			scrollBehavior='inside'>
 			<ModalOverlay />
 			<ModalContent paddingTop={'20px'} paddingBottom='15px'>
 				<ModalBody>
@@ -63,14 +67,14 @@ export const ModalLawyer = ({ isOpen, onClose }) => {
 						cabo por los mejores profesionales y que el capital deje
 						de ser un impedimento en el acceso a la Justicia.
 					</Text>
-					<ModalFooter>
-						<TypeForm>
-							<Button as={'span'} bg='primary.main' color='white'>
-								Contanos tu caso
-							</Button>
-						</TypeForm>
-					</ModalFooter>
 				</ModalBody>
+				<ModalFooter>
+					<TypeForm>
+						<Button as={'span'} bg='primary.main' color='white'>
+							Contanos tu caso
+						</Button>
+					</TypeForm>
+				</ModalFooter>
 			</ModalContent>
 		</Modal>
 	);

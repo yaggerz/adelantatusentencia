@@ -23,6 +23,11 @@ export function HeroSection() {
 					<Heading
 						lineHeight={1.1}
 						fontWeight={600}
+						textAlign={{
+							base: 'center',
+							md: 'left',
+							lg: 'left',
+						}}
 						fontSize={{ base: '3xl', sm: '4xl', lg: '4xl' }}>
 						<Text as={'span'} position={'relative'}>
 							¿Tienes una demanda
@@ -55,6 +60,12 @@ export function HeroSection() {
 				</Stack>
 				<Flex
 					flex={1}
+					paddingTop={{
+						base: '50px',
+						md: '0px',
+						lg: '0px',
+						xl: '0px',
+					}}
 					justify={'center'}
 					align={'center'}
 					position={'relative'}
