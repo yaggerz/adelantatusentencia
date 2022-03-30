@@ -35,7 +35,7 @@ export function Navbar() {
 				py={{ base: 2 }}
 				px={{ base: 4 }}
 				borderBottom={1}
-				borderStyle={'solid'}
+				// borderStyle={'solid'}
 				borderColor={useColorModeValue('gray.200', 'gray.900')}
 				align={'center'}>
 				<Flex

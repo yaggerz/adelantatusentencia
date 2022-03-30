@@ -14,10 +14,11 @@ export function HeroSection() {
 	return (
 		<Container maxW={'7xl'}>
 			<Stack
-				minH={{ md: '100vh', xl: '100vh', lg: '90vh' }}
+				minH={{ md: '80vh', xl: '85vh', lg: '85vh' }}
 				align={'center'}
 				spacing={{ base: 8, md: 10 }}
-				py={{ base: 20, md: 28 }}
+				// py={{ base: 20, md: 28 }}
+				pb={'5rem'}
 				direction={{ base: 'column', md: 'row' }}>
 				<Stack flex={1} spacing={{ base: 5, md: 10 }}>
 					<Heading
