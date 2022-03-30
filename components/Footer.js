@@ -6,6 +6,7 @@ import {
 	Text,
 	useColorModeValue,
 	VisuallyHidden,
+	Img,
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
@@ -45,7 +46,7 @@ export function Footer() {
 				spacing={4}
 				justify={{ base: 'center', md: 'space-between' }}
 				align={{ base: 'center', md: 'center' }}>
-				<img
+				<Img
 					alt='logo variante simple adelante tu sentencia'
 					style={{
 						width: '100px',

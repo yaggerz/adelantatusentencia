@@ -6,7 +6,6 @@ import { Footer } from '../components';
 export const MainLayout = ({ children }) => {
 	return (
 		<>
-			{/* <Navbar /> */}
 			<Container>
 				<Flex
 					justify='center'

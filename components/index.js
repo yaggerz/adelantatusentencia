@@ -5,4 +5,3 @@ export { SectionOne } from './SectionOne';
 export { SectionThree } from './SectionThree';
 export { ModalClient } from './ModalClient';
 export { ModalLawyer } from './ModalLawyer';
-export { Navbar } from './Navbar';

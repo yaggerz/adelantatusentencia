@@ -22,7 +22,7 @@ function StatsCard(props) {
 			bg='white'
 			rounded={'lg'}>
 			<Box display={'grid'} placeItems={'center'}>
-				<Image height={'80px'} src={urlImage} />
+				<Image height={'80px'} src={urlImage} alt='something' />
 				<br />
 				<StatNumber
 					textAlign={'center'}
