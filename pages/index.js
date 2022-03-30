@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React from 'react';
 import {
-	Footer,
 	HeroSection,
 	ModalClient,
 	ModalLawyer,
@@ -9,39 +8,38 @@ import {
 	SectionThree,
 } from '../components';
 import { SectionTwo } from '../components/SectionTwo';
+import { MainLayout as Layout } from '../layouts';
+import { useModal } from '../hooks';
 
 const Home = () => {
-	const [openClientModal, setOpenClientModal] = useState(false);
-	const [openLawyerModal, setOpenLawyermodal] = useState(false);
-
-	const handleToggle = (type) => {
-		if (type == 'client') {
-			return setOpenClientModal(true);
-		} else {
-			return setOpenLawyermodal(true);
-		}
-	};
-
-	const handleCloseClient = () => {
-		setOpenClientModal(false);
-	};
-
-	const handleCloseLawyer = () => {
-		setOpenLawyermodal(false);
-	};
+	const {
+		handleToggle,
+		handleCloseClient,
+		handleCloseLawyer,
+		openClientModal,
+		openLawyerModal,
+	} = useModal();
 
 	return (
 		<>
-			<Head>
-				<title>Adelanta tu sentencia</title>
-			</Head>
-			<HeroSection />
-			<SectionOne />
-			<SectionTwo />
-			<SectionThree onClick={handleToggle} />
-			<Footer />
-			<ModalClient isOpen={openClientModal} onClose={handleCloseClient} />
-			<ModalLawyer isOpen={openLawyerModal} onClose={handleCloseLawyer} />
+			<Layout>
+				<Head>
+					<title>Adelanta tu sentencia</title>
+					<link rel='icon' href='/logo.svg' type='image/x-icon' />
+				</Head>
+				<HeroSection />
+				<SectionOne />
+				<SectionTwo />
+				<SectionThree onClick={handleToggle} />
+				<ModalClient
+					isOpen={openClientModal}
+					onClose={handleCloseClient}
+				/>
+				<ModalLawyer
+					isOpen={openLawyerModal}
+					onClose={handleCloseLawyer}
+				/>
+			</Layout>
 		</>
 	);
 };

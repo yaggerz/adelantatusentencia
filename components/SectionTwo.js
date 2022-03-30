@@ -10,7 +10,7 @@ import {
 
 export const SectionTwo = () => {
 	return (
-		<Container maxW={'7xl'}>
+		<Container maxW={'7xl'} id='sobre-nosotros'>
 			<Stack
 				h={'100vh'}
 				align={'center'}

@@ -14,7 +14,7 @@ export function HeroSection() {
 	return (
 		<Container maxW={'7xl'}>
 			<Stack
-				minH={{ md: '100vh', xl: '100vh', lg: '100vh' }}
+				minH={{ md: '100vh', xl: '100vh', lg: '90vh' }}
 				align={'center'}
 				spacing={{ base: 8, md: 10 }}
 				py={{ base: 20, md: 28 }}
@@ -82,7 +82,7 @@ export function HeroSection() {
 							w={'100%'}
 							h={'100%'}
 							src={
-								'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+								'https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
 							}
 						/>
 					</Box>

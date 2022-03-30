@@ -46,13 +46,11 @@ export function SectionThree({ onClick }) {
 	};
 
 	return (
-		<Container as={'section'} maxW='7xl'>
+		<Container h='70vh' as={'section'} maxW='7xl' id='beneficios'>
 			<Flex
 				mx={'auto'}
 				flexDir='column'
 				justifyContent='center'
-				pt={5}
-				pb={'100px'}
 				px={{ base: 2, sm: 12, md: 17 }}>
 				<chakra.h1
 					textAlign={'center'}

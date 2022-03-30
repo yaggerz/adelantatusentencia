@@ -40,16 +40,16 @@ export function Footer() {
 			<Container
 				as={Stack}
 				maxW={'6xl'}
-				py={4}
+				py={'50px'}
 				direction={{ base: 'column', md: 'row' }}
 				spacing={4}
 				justify={{ base: 'center', md: 'space-between' }}
 				align={{ base: 'center', md: 'center' }}>
 				<img
 					style={{
-						width: '300px',
+						width: '100px',
 					}}
-					src='/logo.png'
+					src='/logo.svg'
 				/>
 				<Text>© 2022 Todos los derechos reservados</Text>
 				<Stack direction={'row'} spacing={6}>
