@@ -56,7 +56,12 @@ export const SectionTwo = () => {
 					</Flex>
 					<Stack flex={1} spacing={{ base: 5, md: 10 }}>
 						<Heading
-							lineHeight={0}
+							marginTop={{
+								base: '3.5rem',
+								md: 0,
+								lg: 0,
+							}}
+							lineHeight={0.5}
 							fontWeight={600}
 							fontSize={{ base: '3xl', sm: '4xl', lg: '4xl' }}>
 							<Text
@@ -67,6 +72,12 @@ export const SectionTwo = () => {
 							</Text>
 						</Heading>
 						<Text
+							textAlign={{
+								base: 'center',
+								md: 'left',
+								lg: 'left',
+								xl: 'left',
+							}}
 							color={'gray.500'}
 							width={{ base: '100%', md: '25vw' }}>
 							Nosotros solo cobramos si el resultado del juicio es
