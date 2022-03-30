@@ -50,7 +50,13 @@ export function SectionThree({ onClick }) {
 	};
 
 	return (
-		<Box marginBottom='5rem'>
+		<Box
+			marginBottom={{
+				base: '20rem',
+				md: '5rem',
+				lg: '5rem',
+				xl: '5rem',
+			}}>
 			<Container h='60vh' as={'section'} maxW='7xl' id='beneficios'>
 				<Flex
 					mx={'auto'}

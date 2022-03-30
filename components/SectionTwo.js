@@ -43,14 +43,14 @@ export const SectionTwo = () => {
 							width={'full'}
 							overflow={'hidden'}>
 							<Image
-								alt={
-									'Foto de hombre con traje, aprovando mediante un pulgar arriba'
-								}
+								alt={'Dos personas en un oficina celebrando'}
 								fit={'cover'}
 								align={'center'}
 								w={'100%'}
 								h={'100%'}
-								src={'./sectionTwoImage.jpg'}
+								src={
+									'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+								}
 							/>
 						</Box>
 					</Flex>
