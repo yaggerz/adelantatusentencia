@@ -31,7 +31,9 @@ export const SectionTwo = () => {
 						width={'full'}
 						overflow={'hidden'}>
 						<Image
-							alt={'Hero Image'}
+							alt={
+								'Foto de hombre con traje, aprovando mediante un pulgar arriba'
+							}
 							fit={'cover'}
 							align={'center'}
 							w={'100%'}

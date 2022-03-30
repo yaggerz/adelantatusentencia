@@ -46,6 +46,7 @@ export function Footer() {
 				justify={{ base: 'center', md: 'space-between' }}
 				align={{ base: 'center', md: 'center' }}>
 				<img
+					alt='logo variante simple adelante tu sentencia'
 					style={{
 						width: '100px',
 					}}
@@ -53,7 +54,7 @@ export function Footer() {
 				/>
 				<Text>© 2022 Todos los derechos reservados</Text>
 				<Stack direction={'row'} spacing={6}>
-					<SocialButton label={'Twitter'} href={'#'}>
+					{/* <SocialButton label={'Twitter'} href={'#'}>
 						<FaTwitter />
 					</SocialButton>
 					<SocialButton label={'YouTube'} href={'#'}>
@@ -61,7 +62,7 @@ export function Footer() {
 					</SocialButton>
 					<SocialButton label={'Instagram'} href={'#'}>
 						<FaInstagram />
-					</SocialButton>
+					</SocialButton> */}
 				</Stack>
 			</Container>
 		</Box>

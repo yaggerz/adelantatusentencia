@@ -25,7 +25,7 @@ const Home = () => {
 			<Layout>
 				<Head>
 					<title>Adelanta tu sentencia</title>
-					<meta charset='utf-8' />
+					<meta charSet='utf-8' />
 					<meta
 						name='description'
 						content='La financiación de litigios consiste en el adelanto de capital a un demandante, a cambio de una parte menor de la sentencia o acuerdo.'

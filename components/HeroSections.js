@@ -87,7 +87,7 @@ export function HeroSection() {
 						width={'full'}
 						overflow={'hidden'}>
 						<Image
-							alt={'Hero Image'}
+							alt={'Personas con papeles, firmando un documento'}
 							fit={'cover'}
 							align={'center'}
 							w={'100%'}

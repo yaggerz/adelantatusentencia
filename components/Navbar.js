@@ -65,7 +65,11 @@ export function Navbar() {
 						})}
 						fontFamily={'heading'}
 						color={useColorModeValue('gray.800', 'white')}>
-						<Img width={'100px'} src='./logo.svg' />
+						<Img
+							alt='logo adelanta tu sentencia'
+							width={'100px'}
+							src='./logo.svg'
+						/>
 					</Text>
 
 					<Flex
