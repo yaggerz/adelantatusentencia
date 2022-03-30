@@ -25,6 +25,19 @@ const Home = () => {
 			<Layout>
 				<Head>
 					<title>Adelanta tu sentencia</title>
+					<meta charset='utf-8' />
+					<meta
+						name='description'
+						content='La financiación de litigios consiste en el adelanto de capital a un demandante, a cambio de una parte menor de la sentencia o acuerdo.'
+					/>
+					<meta name='author' content='qanlex' />
+					<meta name='copyright' content='qanlex' />
+					<meta name='robots' content='index' />
+					<meta name='robots' content='follow' />
+					<meta
+						name='keywords'
+						content='Financiacion de ligitigios'
+					/>
 					<link rel='icon' href='/logo.svg' type='image/x-icon' />
 				</Head>
 				<HeroSection />
