@@ -1,9 +1,11 @@
-import { Container, Flex } from '@chakra-ui/layout';
+import { Container, Flex, Text } from '@chakra-ui/layout';
 import Image from 'next/image';
-import React from 'react';
-import { Footer } from '../components';
+import React, { useState } from 'react';
+import { ModalAbout } from '../components/ModalAbout';
 
 export const MainLayout = ({ children }) => {
+	const [state, setState] = useState(false);
+
 	return (
 		<>
 			<Container>
@@ -15,12 +17,25 @@ export const MainLayout = ({ children }) => {
 					<Image
 						src='/logo-complite.svg'
 						alt='logo adelante tu sentencia'
-						width={'300px'}
-						height='100px'></Image>
+						width={'400px'}
+						height='150px'></Image>
+				</Flex>
+				<Flex
+					justify={{
+						base: 'center',
+						md: 'flex-end',
+					}}
+					marginTop='-3rem'
+					color='gray.600'
+					paddingRight={{ base: '0', md: '3rem' }}
+					paddingBottom={'1rem'}
+					cursor='pointer'>
+					<Text onClick={() => setState(true)}>Sobre nosotros</Text>
 				</Flex>
 			</Container>
 			{children}
-			<Footer />
+			{/* <Footer /> */}
+			<ModalAbout isOpen={state} onClose={setState} />
 		</>
 	);
 };

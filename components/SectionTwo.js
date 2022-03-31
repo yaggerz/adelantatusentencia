@@ -13,7 +13,7 @@ import {
 export const SectionTwo = () => {
 	return (
 		<Box>
-			<Container maxW={'7xl'} id='sobre-nosotros'>
+			<Container maxW={'7xl'} id='sobre-nosotros' mb='2rem'>
 				<Stack
 					h={'100vh'}
 					align={'center'}
@@ -49,7 +49,7 @@ export const SectionTwo = () => {
 								w={'100%'}
 								h={'100%'}
 								src={
-									'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+									'https://images.unsplash.com/photo-1423592707957-3b212afa6733?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80'
 								}
 							/>
 						</Box>
@@ -60,6 +60,10 @@ export const SectionTwo = () => {
 								base: '3.5rem',
 								md: 0,
 								lg: 0,
+							}}
+							textAlign={{
+								base: 'center',
+								md: 'left',
 							}}
 							lineHeight={0.5}
 							fontWeight={600}
@@ -72,6 +76,7 @@ export const SectionTwo = () => {
 							</Text>
 						</Heading>
 						<Text
+							fontSize={'1.3rem'}
 							textAlign={{
 								base: 'center',
 								md: 'left',
@@ -79,7 +84,7 @@ export const SectionTwo = () => {
 								xl: 'left',
 							}}
 							color={'gray.500'}
-							width={{ base: '100%', md: '25vw' }}>
+							width={{ base: '100%', md: '35vw' }}>
 							Nosotros solo cobramos si el resultado del juicio es
 							favorable. En caso de perder el juicio, no queda
 							deuda con nosotros y no tenemos derecho a cobrar

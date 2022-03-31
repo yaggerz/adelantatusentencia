@@ -13,65 +13,66 @@ import {
 } from '@chakra-ui/react';
 
 import { TypeForm } from '../components';
+import { CustomText } from './CustomText';
 
 export const ModalClient = ({ isOpen, onClose }) => {
 	return (
 		<Modal
 			isOpen={isOpen}
 			onClose={onClose}
-			size='xl'
+			size='4xl'
 			scrollBehavior='inside'>
 			<ModalOverlay />
-			<ModalContent paddingTop={'20px'} paddingBottom='15px'>
+			<ModalContent
+				// bg='primary.main'
+				paddingTop={'30px'}
+				paddingBottom='15px'>
 				<ModalBody>
 					<Heading as='h3' size={'md'}>
-						Para el demandante
+						{'Para el demandante'.toLocaleUpperCase()}
 					</Heading>
 					<Text my={'15px'}>
-						Para quien sea dueño de un reclamo meritorio, nosotros
-						te ayudamos a:
+						PARA QUIEN SEA DUEÑO DE UN RECLAMO MERITORIO, NOSOTROS
+						TE AYUDAMOS A:
 					</Text>
 					<UnorderedList>
-						<ListItem mb={'10px'}>
+						<ListItem mb={'15px'}>
 							<Box color={'primary.main'} as='span'>
-								ADELANTAR CAPITAL: {'  '}
+								ADELANTAR CAPITAL:{' '}
 							</Box>
-							Mantén tu liquidez sin necesidad de pagar los costos
-							de un proceso sobre el cual no hay certeza en el
-							resultado ni el tiempo del cobro. Además, en
-							procesos ya avanzados se puede adelantar parte del
-							monto estimado de la sentencia y así tener acceso a
-							efectivo sin necesidad de esperar el resultado del
-							juicio.
+							<CustomText>
+								{'Mantén tu liquidez sin necesidad de pagar los costos de un proceso sobre el cual no hay certeza en el resultado ni el tiempo del cobro. Además, en procesos ya avanzados se puede adelantar parte del monto estimado de la sentencia y así tener acceso a efectivo sin necesidad de esperar el resultado del juicio.'.toLocaleUpperCase()}
+							</CustomText>
 						</ListItem>
-						<ListItem mb={'10px'}>
+						<ListItem mb={'15px'}>
 							<Box as='span' color='primary.main'>
 								MITIGAR RIESGOS:{' '}
 							</Box>
-							El uso de nuestra financiación es una forma de
-							diversificar el riesgo: resignando una pequeña
-							porción de la potencial ganancia, te aseguras no
-							perder capital en el juicio.
+							<CustomText>
+								{'El uso de nuestra financiación es una forma de diversificar el riesgo: resignando una pequeño porción de la potencial ganancia, te aseguras no perder capital en el juicio.'.toLocaleUpperCase()}
+							</CustomText>
 						</ListItem>
-						<ListItem mb={'10px'}>
+						<ListItem mb={'15px'}>
 							<Box as='span' color='primary.main'>
 								ORDENA SUS ESTADOS FINANCIEROS: {'  '}
 							</Box>
-							El litigio deja de figurar como un pasivo que
-							consume caja para pagar costos legales y pasa a ser
-							un activo a través del capital recibido. El
-							demandante, además, al dejar de destinar capital en
-							abogados puede invertir ese dinero en su propia
-							actividad.
+							<CustomText>
+								EL LITIGIO DEJA DE FIGURAR COMO UN PASIVO QUE
+								CONSUME CAJA PARA PAGAR COSTOS LEGALES Y PASA A
+								SER UN ACTIVO A TRAVÉS DEL CAPITAL RECIBIDO. EL
+								DEMANDANTE, ADEMÁS, AL DEJAR DE DESTINAR CAPITAL
+								EN ABOGADOS PUEDE INVERTIR ESE DINERO EN SU
+								PROPIA ACTIVIDAD.
+							</CustomText>
 						</ListItem>
 					</UnorderedList>
-					<Text>
-						Nuestro objetivo es ayudar a que todos puedan llevar a
-						cabo sus reclamos meritorios, independientemente de su
-						capital. Además, queremos ser socios que brinden
-						previsibilidad sobre el cobro de estos reclamos,
-						asegurando un camino claro en su cobro.
-					</Text>
+					<CustomText>
+						NUESTRO OBJETIVO ES AYUDAR A QUE TODOS PUEDAN LLEVAR A
+						CABO SUS RECLAMOS MERITORIOS, INDEPENDIENTEMENTE DE SU
+						CAPITAL. ADEMÁS, QUEREMOS SER SOCIOS QUE BRINDEN
+						PREVISIBILIDAD SOBRE EL COBRO DE ESTOS RECLAMOS,
+						ASEGURANDO UN CAMINO CLARO EN SU COBRO.
+					</CustomText>
 				</ModalBody>
 				<ModalFooter>
 					<TypeForm>

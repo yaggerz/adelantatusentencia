@@ -12,61 +12,69 @@ import {
 	Button,
 } from '@chakra-ui/react';
 import { TypeForm } from '../components';
+import { CustomText } from './CustomText';
 
 export const ModalLawyer = ({ isOpen, onClose }) => {
 	return (
 		<Modal
 			isOpen={isOpen}
 			onClose={onClose}
-			size='xl'
+			size='3xl'
 			scrollBehavior='inside'>
 			<ModalOverlay />
-			<ModalContent paddingTop={'20px'} paddingBottom='15px'>
+			<ModalContent paddingTop={'30px'} paddingBottom='15px'>
 				<ModalBody>
 					<Heading as='h3' size={'md'}>
-						Para el abogado:
+						{'Para el abogado:'.toUpperCase()}
 					</Heading>
 					<Text my={'15px'}>
-						Actuamos como socios de los abogados al hacernos cargo
-						de los honorarios profesionales que permitan llevar a
-						cabo los litigios. De esta forma, los profesionales se
-						aseguran de:
+						ACTUAMOS COMO SOCIOS DE LOS ABOGADOS AL HACERNOS CARGO
+						DE LOS HONORARIOS PROFESIONALES QUE PERMITAN LLEVAR A
+						CABO LOS LITIGIOS. DE ESTA FORMA, LOS PROFESIONALES SE
+						ASEGURAN DE:
 					</Text>
 					<UnorderedList>
 						<ListItem mb={'10px'}>
 							<Box color={'primary.main'} as='span'>
 								MANTENER CLIENTES:
 							</Box>
-							Al dejar de rechazar casos cuando los clientes no
-							puedan hacerle frente al pago de sus honorarios.
+							<CustomText>
+								AL DEJAR DE RECHAZAR CASOS CUANDO LOS CLIENTES
+								NO PUEDAN HACERLE FRENTE AL PAGO DE SUS
+								HONORARIOS.
+							</CustomText>
 						</ListItem>
 						<ListItem mb={'10px'}>
 							<Box as='span' color='primary.main'>
 								MITIGAR RIESGOS:{' '}
 							</Box>
-							Al asegurarse pago upfront, se blinda frente al
-							riesgo de no cobrar nada en caso de un resultado
-							negativo.
+							<CustomText>
+								AL ASEGURARSE PAGO UPFRONT, SE BLINDA FRENTE AL
+								RIESGO DE NO COBRAR NADA EN CASO DE UN RESULTADO
+								NEGATIVO.
+							</CustomText>
 						</ListItem>
 						<ListItem mb={'10px'}>
 							<Box as='span' color='primary.main'>
 								OBTENER LIQUIDEZ: {'  '}
 							</Box>
-							Sin esperar el resultado del litigio.
+							<CustomText>
+								SIN ESPERAR EL RESULTADO DEL LITIGIO.
+							</CustomText>
 						</ListItem>
 					</UnorderedList>
-					<Text>
-						De nuestro lado, confiamos en los profesionales que
-						llevan adelante los juicios, ya que no tomamos un rol
-						activo sobre los procesos. Al no existir una subrogación
-						de derechos, la estrategia jurídica queda en manos de
-						los profesionales y sus clientes.
-					</Text>
-					<Text>
-						Creemos que toda demanda meritoria debe ser llevada a
-						cabo por los mejores profesionales y que el capital deje
-						de ser un impedimento en el acceso a la Justicia.
-					</Text>
+					<CustomText>
+						DE NUESTRO LADO, CONFIAMOS EN LOS PROFESIONALES QUE
+						LLEVAN ADELANTE LOS JUICIOS, YA QUE NO TOMAMOS UN ROL
+						ACTIVO SOBRE LOS PROCESOS. AL NO EXISTIR UNA SUBROGACIÓN
+						DE DERECHOS, LA ESTRATEGIA JURÍDICA QUEDA EN MANOS DE
+						LOS PROFESIONALES Y SUS CLIENTES.
+					</CustomText>
+					<CustomText>
+						CREEMOS QUE TODA DEMANDA MERITORIA DEBE SER LLEVADA A
+						CABO POR LOS MEJORES PROFESIONALES Y QUE EL CAPITAL DEJE
+						DE SER UN IMPEDIMENTO EN EL ACCESO A LA JUSTICIA.
+					</CustomText>
 				</ModalBody>
 				<ModalFooter>
 					<TypeForm>
