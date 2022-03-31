@@ -15,7 +15,7 @@ export const SectionTwo = () => {
 		<Box>
 			<Container maxW={'7xl'} id='sobre-nosotros' mb='2rem'>
 				<Stack
-					h={'100vh'}
+					h={'80vh'}
 					align={'center'}
 					spacing={{ base: 8, md: 10 }}
 					py={{ base: 20, md: 28 }}

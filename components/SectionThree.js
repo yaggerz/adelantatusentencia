@@ -51,9 +51,10 @@ export function SectionThree({ onClick }) {
 
 	return (
 		<Box
+			marginTop={{ base: '15rem', md: '-5rem' }}
 			marginBottom={{
 				base: '20rem',
-				md: '5rem',
+				md: '15rem',
 				lg: '5rem',
 				xl: '5rem',
 			}}>
