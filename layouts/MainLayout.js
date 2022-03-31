@@ -17,8 +17,8 @@ export const MainLayout = ({ children }) => {
 					<Image
 						src='/logo-complite.svg'
 						alt='logo adelante tu sentencia'
-						width={'400px'}
-						height='150px'></Image>
+						width={'500px'}
+						height='200px'></Image>
 				</Flex>
 				<Flex
 					justify={{
