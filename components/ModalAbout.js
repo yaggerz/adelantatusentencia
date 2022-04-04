@@ -56,7 +56,10 @@ export const ModalAbout = ({ isOpen, onClose }) => {
 						<Text as={'h4'} fontWeight={700}>
 							Powered By:
 						</Text>
-						<a href='https://www.qanlex.com/' target={'_blank'}>
+						<a
+							href='https://www.qanlex.com/'
+							target={'_blank'}
+							rel='noreferrer'>
 							<Image
 								src='/logo-qanlex.png'
 								height={'120px'}
