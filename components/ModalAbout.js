@@ -7,8 +7,11 @@ import {
 	ModalOverlay,
 	Button,
 	Heading,
+	Text,
+	Flex,
 } from '@chakra-ui/react';
 import { CustomText } from './CustomText';
+import Image from 'next/image';
 
 export const ModalAbout = ({ isOpen, onClose }) => {
 	const handleClose = () => {
@@ -30,26 +33,37 @@ export const ModalAbout = ({ isOpen, onClose }) => {
 					<CustomText as='p' mb='1rem'>
 						Somos un equipo interdisciplinario integrado por
 						abogados e ingenieros con una visión integral del
-						derecho, las finanzas y la tecnología. juntos estamos
-						construyendo el primer fondo tecnológico de litigation
-						finance operando en el derecho continental.
+						derecho, las finanzas y la tecnología.
 					</CustomText>
 					<CustomText as='p' mb='1rem'>
 						La financiación de litigios tiene un largo historial en
 						el derecho anglosajón, con varios fondos operando en
-						estos países. en qanlex nuestra misión es proveer
-						capital para llevar a cabo demandas meritorias en todos
-						los países con derecho continental, con un foco especial
-						en latinoamérica.
+						estos países. Nuestra misión es proveer capital para
+						llevar a cabo demandas meritorias en todos los países
+						con derecho continental, con un foco especial en
+						Latinoamérica.
 					</CustomText>
 					<CustomText as='p' mb='1rem'>
-						Nuestro algoritmo de screening, case miner, rastrea,
-						filtra y selecciona entre millones de demandas. de esta
-						manera, estamos llegando a regiones inexploradas y
-						escalando nuestra solución a nuevos países, buscando los
-						mejores reclamos que puedan beneficiarse de nuestro
+						Apalancados en Qanlex, utilizamos nuestro algoritmo de
+						screening, Case Miner, el cual rastrea, filtra y
+						selecciona entre millones de demandas. De esta manera,
+						estamos llegando a regiones inexploradas y escalando
+						nuestra solución a nuevos países, buscando los mejores
+						reclamos que puedan beneficiarse de nuestro
 						financiamiento.
 					</CustomText>
+					<Flex mt={'3rem'} alignItems={'center'} flexDir='column'>
+						<Text as={'h4'} fontWeight={700}>
+							Powered By:
+						</Text>
+						<a href='https://www.qanlex.com/' target={'_blank'}>
+							<Image
+								src='/logo-qanlex.png'
+								height={'120px'}
+								width='360px'
+							/>
+						</a>
+					</Flex>
 				</ModalBody>
 
 				<ModalFooter marginBottom={'1rem'}>

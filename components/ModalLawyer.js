@@ -10,7 +10,10 @@ import {
 	Heading,
 	ModalFooter,
 	Button,
+	Flex,
+	IconButton,
 } from '@chakra-ui/react';
+import { CloseIcon } from '@chakra-ui/icons';
 import { TypeForm } from '../components';
 import { CustomText } from './CustomText';
 
@@ -24,14 +27,22 @@ export const ModalLawyer = ({ isOpen, onClose }) => {
 			<ModalOverlay />
 			<ModalContent paddingTop={'30px'} paddingBottom='15px'>
 				<ModalBody>
-					<Heading as='h3' size={'md'}>
-						{'Para el abogado:'.toUpperCase()}
-					</Heading>
+					<Flex justify={'space-between'}>
+						<Heading as='h3' size={'md'}>
+							Para el abogado:
+						</Heading>
+						<Box>
+							<IconButton onClick={onClose}>
+								<CloseIcon />
+							</IconButton>
+						</Box>
+					</Flex>
+
 					<Text my={'15px'}>
-						ACTUAMOS COMO SOCIOS DE LOS ABOGADOS AL HACERNOS CARGO
-						DE LOS HONORARIOS PROFESIONALES QUE PERMITAN LLEVAR A
-						CABO LOS LITIGIOS. DE ESTA FORMA, LOS PROFESIONALES SE
-						ASEGURAN DE:
+						actuamos como socios de los abogados al hacernos cargo
+						de los honorarios profesionales que permitan llevar a
+						cabo los litigios. de esta forma, los profesionales se
+						aseguran de:
 					</Text>
 					<UnorderedList>
 						<ListItem mb={'10px'}>
@@ -39,9 +50,9 @@ export const ModalLawyer = ({ isOpen, onClose }) => {
 								MANTENER CLIENTES:
 							</Box>
 							<CustomText>
-								AL DEJAR DE RECHAZAR CASOS CUANDO LOS CLIENTES
-								NO PUEDAN HACERLE FRENTE AL PAGO DE SUS
-								HONORARIOS.
+								Al dejar de rechazar casos cuando los clientes
+								no puedan hacerle frente al pago de sus
+								honorarios.
 							</CustomText>
 						</ListItem>
 						<ListItem mb={'10px'}>
@@ -49,9 +60,9 @@ export const ModalLawyer = ({ isOpen, onClose }) => {
 								MITIGAR RIESGOS:{' '}
 							</Box>
 							<CustomText>
-								AL ASEGURARSE PAGO UPFRONT, SE BLINDA FRENTE AL
-								RIESGO DE NO COBRAR NADA EN CASO DE UN RESULTADO
-								NEGATIVO.
+								Al asegurarse pago upfront, se blinda frente al
+								riesgo de no cobrar nada en caso de un resultado
+								negativo.
 							</CustomText>
 						</ListItem>
 						<ListItem mb={'10px'}>
@@ -59,21 +70,21 @@ export const ModalLawyer = ({ isOpen, onClose }) => {
 								OBTENER LIQUIDEZ: {'  '}
 							</Box>
 							<CustomText>
-								SIN ESPERAR EL RESULTADO DEL LITIGIO.
+								Sin esperar el resultado del litigio.
 							</CustomText>
 						</ListItem>
 					</UnorderedList>
 					<CustomText>
-						DE NUESTRO LADO, CONFIAMOS EN LOS PROFESIONALES QUE
-						LLEVAN ADELANTE LOS JUICIOS, YA QUE NO TOMAMOS UN ROL
-						ACTIVO SOBRE LOS PROCESOS. AL NO EXISTIR UNA SUBROGACIÓN
-						DE DERECHOS, LA ESTRATEGIA JURÍDICA QUEDA EN MANOS DE
-						LOS PROFESIONALES Y SUS CLIENTES.
+						De nuestro lado, confiamos en los profesionales que
+						llevan adelante los juicios, ya que no tomamos un rol
+						activo sobre los procesos. al no existir una subrogación
+						de derechos, la estrategia jurídica queda en manos de
+						los profesionales y sus clientes.
 					</CustomText>
 					<CustomText>
-						CREEMOS QUE TODA DEMANDA MERITORIA DEBE SER LLEVADA A
-						CABO POR LOS MEJORES PROFESIONALES Y QUE EL CAPITAL DEJE
-						DE SER UN IMPEDIMENTO EN EL ACCESO A LA JUSTICIA.
+						Creemos que toda demanda meritoria debe ser llevada a
+						cabo por los mejores profesionales y que el capital deje
+						de ser un impedimento en el acceso a la justicia.
 					</CustomText>
 				</ModalBody>
 				<ModalFooter>
