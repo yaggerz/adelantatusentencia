@@ -11,7 +11,7 @@ export const SectionOne = () => {
 							mb={4}
 							color='white'
 							fontSize={{ base: '3xl', sm: '4xl', lg: '4xl' }}>
-							¿Qué es La financiación de Litigios?
+							¿Qué es la financiación de litigios?
 						</Heading>
 						<Text
 							width={{
