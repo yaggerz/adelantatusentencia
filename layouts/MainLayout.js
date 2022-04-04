@@ -25,7 +25,7 @@ export const MainLayout = ({ children }) => {
 					justify='center'
 					align='center'
 					marginTop={'1.5rem'}
-					marginBottom='3.5rem'>
+					marginBottom={{ base: '2rem', md: '-6rem' }}>
 					<Image
 						src='/logo-complite.svg'
 						alt='logo adelante tu sentencia'
