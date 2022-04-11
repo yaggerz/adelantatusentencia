@@ -36,21 +36,9 @@ export const ModalAbout = ({ isOpen, onClose }) => {
 						derecho, las finanzas y la tecnología.
 					</CustomText>
 					<CustomText as='p' mb='1rem'>
-						La financiación de litigios tiene un largo historial en
-						el derecho anglosajón, con varios fondos operando en
-						estos países. Nuestra misión es proveer capital para
-						llevar a cabo demandas meritorias en todos los países
-						con derecho continental, con un foco especial en
-						Latinoamérica.
-					</CustomText>
-					<CustomText as='p' mb='1rem'>
-						Apalancados en Qanlex, utilizamos nuestro algoritmo de
-						screening, Case Miner, el cual rastrea, filtra y
-						selecciona entre millones de demandas. De esta manera,
-						estamos llegando a regiones inexploradas y escalando
-						nuestra solución a nuevos países, buscando los mejores
-						reclamos que puedan beneficiarse de nuestro
-						financiamiento.
+						Somos el primer fondo de financiación de litigios 
+						apalancado en la tecnología para proveeapital a 
+						demandantes en juicios o arbitrajes.
 					</CustomText>
 					<Flex mt={'3rem'} alignItems={'center'} flexDir='column'>
 						<Text as={'h4'} fontWeight={700}>
